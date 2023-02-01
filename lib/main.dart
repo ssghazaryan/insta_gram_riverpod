@@ -1,11 +1,8 @@
-import 'dart:developer';
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_gram_riverpod/firebase_options.dart';
 import 'package:insta_gram_riverpod/pages/sign/view/login_view.dart';
-import 'package:insta_gram_riverpod/state/auth/backend/authenticator.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/is_logged_provider.dart';
 
@@ -64,7 +61,7 @@ class MainView extends StatelessWidget {
           style: TextStyle(),
         ),
       ),
-      body: Consumer(builder: (context, ref, _) {
+      body: Consumer(builder: (__, ref, _) {
         return Center(
           child: TextButton(
             onPressed: () async {
