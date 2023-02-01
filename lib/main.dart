@@ -2,11 +2,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_gram_riverpod/firebase_options.dart';
-import 'package:insta_gram_riverpod/pages/sign/view/login_view.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/is_logged_provider.dart';
 import 'package:insta_gram_riverpod/state/providers/loading_provider.dart';
-import 'package:insta_gram_riverpod/view/components/loading/loading_screen.dart';
+import 'package:insta_gram_riverpod/views/components/loading/loading_screen.dart';
+
+import 'views/login/login_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

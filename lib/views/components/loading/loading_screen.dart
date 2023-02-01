@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:insta_gram_riverpod/view/components/loading/loading_screen_controller.dart';
+import 'package:insta_gram_riverpod/views/components/loading/loading_screen_controller.dart';
 
 import '../constants/strings.dart';
 
