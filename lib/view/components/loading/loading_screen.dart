@@ -24,7 +24,7 @@ class LoadingScreen {
   }
 
   void hide() {
-    _controller?.close;
+    _controller?.close();
     _controller = null;
   }
 

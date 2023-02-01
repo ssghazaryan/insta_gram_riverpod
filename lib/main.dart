@@ -5,6 +5,8 @@ import 'package:insta_gram_riverpod/firebase_options.dart';
 import 'package:insta_gram_riverpod/pages/sign/view/login_view.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/is_logged_provider.dart';
+import 'package:insta_gram_riverpod/state/providers/loading_provider.dart';
+import 'package:insta_gram_riverpod/view/components/loading/loading_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,7 +38,14 @@ class App extends StatelessWidget {
         indicatorColor: Colors.purple,
       ),
       home: Consumer(
-        builder: (BuildContext context, WidgetRef ref, Widget? child) {
+        builder: (BuildContext context1, WidgetRef ref, Widget? child) {
+          ref.listen<bool>(loadingProvider, (_, isLoading) {
+            if (isLoading) {
+              LoadingScreen.instance().show(context: context1);
+            } else {
+              LoadingScreen.instance().hide();
+            }
+          });
           final isLoggedIn = ref.watch(isLoggedProvider);
 
           if (isLoggedIn) {
