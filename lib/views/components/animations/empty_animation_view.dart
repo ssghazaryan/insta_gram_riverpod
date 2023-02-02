@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:insta_gram_riverpod/views/components/animations/animations.dart';
 
-class EmptyContentView extends StatelessWidget {
+class EmptyContentWithTextView extends StatelessWidget {
   final String text;
-  const EmptyContentView({super.key, required this.text});
+  const EmptyContentWithTextView({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class EmptyContentView extends StatelessWidget {
                   ),
             ),
           ),
-          const EmptyAnimation(),
+          const EmptyAnimationView(),
         ],
       ),
     );

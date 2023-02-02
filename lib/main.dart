@@ -2,10 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:insta_gram_riverpod/firebase_options.dart';
-import 'package:insta_gram_riverpod/state/auth/providers/auth_state_provider.dart';
 import 'package:insta_gram_riverpod/state/auth/providers/is_logged_provider.dart';
 import 'package:insta_gram_riverpod/state/providers/loading_provider.dart';
 import 'package:insta_gram_riverpod/views/components/loading/loading_screen.dart';
+import 'package:insta_gram_riverpod/views/main/main_view.dart';
 
 import 'views/login/login_view.dart';
 
@@ -56,33 +56,6 @@ class App extends StatelessWidget {
           }
         },
       ),
-    );
-  }
-}
-
-class MainView extends StatelessWidget {
-  const MainView({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Main view',
-          style: TextStyle(),
-        ),
-      ),
-      body: Consumer(builder: (__, ref, _) {
-        return Center(
-          child: TextButton(
-            onPressed: () async {
-              await ref.read(authStateProvider.notifier).logOut();
-            },
-            child: const Text(
-              'Log out',
-            ),
-          ),
-        );
-      }),
     );
   }
 }

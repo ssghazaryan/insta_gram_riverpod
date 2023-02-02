@@ -1,36 +1,36 @@
 import 'package:insta_gram_riverpod/views/components/animations/lottie_animation_view.dart';
 import 'package:insta_gram_riverpod/views/components/animations/models/lottie_animation.dart';
 
-class DataNotFoundAnimation extends LottieAnimationView {
-  const DataNotFoundAnimation({
+class DataNotFoundAnimationView extends LottieAnimationView {
+  const DataNotFoundAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.dataNotFound,
         );
 }
-class EmptyAnimation extends LottieAnimationView {
-  const EmptyAnimation({
+class EmptyAnimationView extends LottieAnimationView {
+  const EmptyAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.empty,
         );
 }
-class ErrorAnimation extends LottieAnimationView {
-  const ErrorAnimation({
+class ErrorAnimationView extends LottieAnimationView {
+  const ErrorAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.error,
         );
 }
-class LoadingAnimation extends LottieAnimationView {
-  const LoadingAnimation({
+class LoadingAnimationView extends LottieAnimationView {
+  const LoadingAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.loading,
         );
 }
-class SmallAnimation extends LottieAnimationView {
-  const SmallAnimation({
+class SmallAnimationView extends LottieAnimationView {
+  const SmallAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.smallError,
