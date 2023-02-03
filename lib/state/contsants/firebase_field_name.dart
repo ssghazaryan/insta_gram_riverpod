@@ -1,7 +1,6 @@
-
 class FirebaseFieldName {
   static const userId = 'uid';
-  static const posId = 'pod_id';
+  static const postId = 'pod_id';
   static const comment = 'comment';
   static const createdAt = 'created_at';
   static const date = 'date';

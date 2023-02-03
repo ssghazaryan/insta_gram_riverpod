@@ -8,6 +8,7 @@ class DataNotFoundAnimationView extends LottieAnimationView {
           animation: LottieAnimation.dataNotFound,
         );
 }
+
 class EmptyAnimationView extends LottieAnimationView {
   const EmptyAnimationView({
     super.key,
@@ -15,6 +16,7 @@ class EmptyAnimationView extends LottieAnimationView {
           animation: LottieAnimation.empty,
         );
 }
+
 class ErrorAnimationView extends LottieAnimationView {
   const ErrorAnimationView({
     super.key,
@@ -22,6 +24,7 @@ class ErrorAnimationView extends LottieAnimationView {
           animation: LottieAnimation.error,
         );
 }
+
 class LoadingAnimationView extends LottieAnimationView {
   const LoadingAnimationView({
     super.key,
@@ -29,8 +32,9 @@ class LoadingAnimationView extends LottieAnimationView {
           animation: LottieAnimation.loading,
         );
 }
-class SmallAnimationView extends LottieAnimationView {
-  const SmallAnimationView({
+
+class SmallErrorAnimationView extends LottieAnimationView {
+  const SmallErrorAnimationView({
     super.key,
   }) : super(
           animation: LottieAnimation.smallError,

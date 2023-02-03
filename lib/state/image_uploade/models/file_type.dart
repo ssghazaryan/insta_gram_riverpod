@@ -1,1 +1,4 @@
-enum FileType { image, video }
+enum FileType {
+  image,
+  video,
+}
